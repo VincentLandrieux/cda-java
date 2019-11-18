@@ -8,11 +8,13 @@ public class Tp5Exo5 {
 		System.out.println(palindrome("bleu"));
 	}
 	
+	
+	
 	public static boolean palindrome(String mot) {
 		boolean flag = true;
 		int i = 0;
 		while(i < mot.length()/2 && flag) {
-			if(!mot.substring(i, i+1).equals(mot.substring(mot.length()-i-1, mot.length()-i))) {
+			if(mot.charAt(i) != mot.charAt(mot.length()-i-1)) {
 				flag = false;
 			}
 			
